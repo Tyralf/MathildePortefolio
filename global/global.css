@@ -6,6 +6,7 @@
     --secondary-color: #84486E;
     --font-color: #333;
     --background-color: #f9f9f9;
+    --darker-background: #470B31;
 }
 
 *, *::before, *::after {
@@ -18,6 +19,7 @@ body {
     color: var(--font-color);
     background-color: var(--background-color);
     margin: 0;
+    display: flow-root;
 }
 
 h1, h2, h3, h4, h5, h6 {

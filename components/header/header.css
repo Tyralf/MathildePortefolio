@@ -1,8 +1,98 @@
-.header{
-  background-color: var(--primary-color);  
+header { 
+  background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  margin:0;
+  text-align: left;
+  z-index: 999;
 }
 
-.header>h2,
-.header>p {
+nav {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    text-align: right;
+    background-color: var(--primary-color);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+header h2 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 1em 1em;
+    
+}
+
+nav a {
     color: var(--background-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity : 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav li:hover, nav li:active {
+    color: var(--secondary-color, pink);
+    background-color: var(--darker-background, darkred);
+}
+
+.nav-toggle {
+    display:none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+/*Burger button*/
+.burger {
+    cursor: pointer;
+  }
+  
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--background-color);
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+  
+.nav-toggle:checked ~ Label>.burger>.bar:nth-child(1) {
+    transform: translate(0, 8px) rotate(-45deg);
+}
+  
+.nav-toggle:checked ~ Label>.burger>.bar:nth-child(2) {opacity: 0;}
+  
+.nav-toggle:checked ~ Label>.burger>.bar:nth-child(3){
+    transform: translate(0, -8px) rotate(45deg);
 }
