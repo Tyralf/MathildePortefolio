@@ -1,0 +1,8 @@
+.header{
+  background-color: var(--primary-color);  
+}
+
+.header>h2,
+.header>p {
+    color: var(--background-color);
+}

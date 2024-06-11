@@ -1,0 +1,35 @@
+/* utils/global.css */
+
+/* Variables de couleur */
+:root {
+    --primary-color: #5D0E41;
+    --secondary-color: #84486E;
+    --font-color: #333;
+    --background-color: #f9f9f9;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
