@@ -7,6 +7,9 @@
     --font-color: #333;
     --background-color: #f9f9f9;
     --darker-background: #470B31;
+    --title-font: 'Taviraj', serif;
+    --text-font: 'Lato', sans-serif;
+    
 }
 
 *, *::before, *::after {
@@ -15,7 +18,8 @@
 
 /* Styles globaux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--text-font);
+    font-weight: 300;
     color: var(--font-color);
     background-color: var(--background-color);
     margin: 0;
@@ -23,7 +27,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font, Arial);
     color: var(--primary-color);
+    font-weight: 400;
 }
 
 
@@ -34,4 +40,12 @@ a {
 
 a:hover {
     color: var(--secondary-color);
+}
+
+.sub-title {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    font-family: var(--text-font, Arial);
+    font-style: italic;
+    opacity: 75%;
 }

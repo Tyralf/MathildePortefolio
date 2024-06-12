@@ -6,6 +6,26 @@ header {
   text-align: left;
   z-index: 999;
 }
+header h2, header p {
+    color: white;
+    margin: 0;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: auto 2fr auto 0.5fr;
+    font-size: clamp(0.7rem,4vw, 1rem);
+    align-items: center;
+}
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-img {
+    width: clamp(50px,4em, 100px);
+    margin: 0.5em;
+}
 
 nav {
     position: absolute;
@@ -20,7 +40,7 @@ nav {
 }
 
 header h2 {
-    color: white;
+    line-height: 0.8em;
 }
 
 nav ul {
@@ -95,4 +115,42 @@ nav li:hover, nav li:active {
   
 .nav-toggle:checked ~ Label>.burger>.bar:nth-child(3){
     transform: translate(0, -8px) rotate(45deg);
+}
+
+
+
+@media (min-width: 900px){
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+    }
+
+    nav {
+        all: unset;
+        height: 100%;
+        grid-column: 4 / 4;
+    }
+
+    nav a {
+        opacity: 1;
+        height: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav li {
+        padding: 2rem 1.5rem;
+        height: 100%;
+        font-size: 0.8em;
+    }
 }
