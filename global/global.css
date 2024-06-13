@@ -1,12 +1,17 @@
-/* utils/global.css */
-
-/* Variables de couleur */
 :root {
-    --primary-color: #5D0E41;
-    --secondary-color: #84486E;
+    --primary-dark-color: #5D0E41;
+    --secondary-dark-color: #84486E;
+    --primary-light-color: #f9f9f9;
+
     --font-color: #333;
     --background-color: #f9f9f9;
     --darker-background: #470B31;
+
+    --button-color: #ffc0cb;
+    --button-hover-color: #e097a4;
+
+    --shadow-color: rgba(43, 43, 43, 0.336);
+
     --title-font: 'Taviraj', serif;
     --text-font: 'Lato', sans-serif;
     
@@ -21,15 +26,22 @@ body {
     font-family: var(--text-font);
     font-weight: 300;
     color: var(--font-color);
+    letter-spacing: 0.025rem;
     background-color: var(--background-color);
     margin: 0;
     display: flow-root;
+}
+
+.first-section{
+    padding-top: 8vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--title-font, Arial);
     color: var(--primary-color);
     font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 
@@ -48,4 +60,23 @@ a:hover {
     font-family: var(--text-font, Arial);
     font-style: italic;
     opacity: 75%;
+}
+
+button {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    padding: 1em;
+    box-shadow: 0.1em 0.1em 1em 0.1em var(--shadow-color);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background-color: var(--button-hover-color);
+}
+
+button:active {
+    transform: translateY(0);
+    background-color: var(--button-hover-color);
 }

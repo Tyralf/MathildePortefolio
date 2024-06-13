@@ -1,5 +1,5 @@
 header { 
-  background-color: var(--primary-color);
+  background-color: var(--primary-dark-color);
   position: fixed;
   width: 100%;
   margin:0;
@@ -7,8 +7,10 @@ header {
   z-index: 999;
 }
 header h2, header p {
-    color: white;
+    color: var(--primary-light-color);
     margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
 }
 
 .logo {
@@ -32,7 +34,7 @@ nav {
     top: 100%;
     right: 0%;
     text-align: right;
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark-color);
     width: 100%;
     transform: scale(1,0);
     transform-origin: top;
@@ -55,7 +57,7 @@ nav li {
 }
 
 nav a {
-    color: var(--background-color);
+    color: var(--primary-light-color);
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -64,7 +66,7 @@ nav a {
 }
 
 nav li:hover, nav li:active {
-    color: var(--secondary-color, pink);
+    color: var(--secondary-dark-color, pink);
     background-color: var(--darker-background, darkred);
 }
 
@@ -101,7 +103,7 @@ nav li:hover, nav li:active {
 .bar {
     width: 30px;
     height: 3px;
-    background-color: var(--background-color);
+    background-color: var(--primary-light-color);
     margin: 5px 0;
     transition: 0.4s;
     border-radius: 5px;
