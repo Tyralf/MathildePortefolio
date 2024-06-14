@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: var(--primary-color);
     text-decoration: none;
+    text-shadow: 2px 2px 3px var(--shadow-color);
 }
 
 a:hover {
@@ -79,4 +80,20 @@ button:hover {
 button:active {
     transform: translateY(0);
     background-color: var(--button-hover-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    margin: 2em;
+    text-align: center;
+}
+
+.section-title .title {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }

@@ -3,10 +3,15 @@ footer {
     color: var(--primary-light-color);
     text-align: center;
     padding: 2rem 0;
+    margin-top: 3rem;
 }
 
-footer a, footer h4 {
+footer h4 {
     color: var(--primary-light-color);
+}
+
+footer a {
+    font-weight: 800;
 }
 
 .footer-content {
@@ -22,6 +27,31 @@ footer a, footer h4 {
 .footer-plan ul {
     list-style: none;
     padding: 0;
+}
+
+.phone-number,  .phone-number-checkBox{
+    display : none;
+}
+
+.phone-hidding-label p{
+    text-decoration: underline;
+}
+
+.phone-hidding-label :hover, .phone-hidding-label :active {
+    cursor: pointer;
+    color: #ffc0cb;
+}
+
+.phone-number-checkBox:checked ~ .phone-hidding-label {
+    display: none;
+}
+
+.phone-number-checkBox:checked ~ .phone-number {
+    display: block;
+}
+
+.footer-plan li {
+    padding: 0.3em;
 }
 
 footer a:hover {

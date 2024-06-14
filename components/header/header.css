@@ -121,7 +121,7 @@ nav li:hover, nav li:active {
 
 
 
-@media (min-width: 900px){
+@media (min-width: 1050px){
     .nav-toggle-label {
         display: none;
     }
