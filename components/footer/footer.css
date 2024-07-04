@@ -1,9 +1,10 @@
 footer {
-    background-color: var(--primary-dark-color);
+    background-color: var(--primary-color);
     color: var(--primary-light-color);
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
+    border-top: 2px solid var(--secondary-color) ;
 }
 
 footer h4 {

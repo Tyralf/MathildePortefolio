@@ -1,13 +1,23 @@
 header { 
-  background-color: var(--primary-dark-color);
+  background-color: var(--background-color);
   position: fixed;
   width: 100%;
+  height: var(--header-height);
   margin:0;
   text-align: left;
   z-index: 999;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+header.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 header h2, header p {
-    color: var(--primary-light-color);
+    color: var(--accent-color);
     margin: 0;
     text-transform: none;
     letter-spacing: 0;
@@ -34,11 +44,12 @@ nav {
     top: 100%;
     right: 0%;
     text-align: right;
-    background-color: var(--primary-dark-color);
+    background-color: var(--background-color);
     width: 100%;
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h2 {
@@ -49,10 +60,11 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav li {
-    padding: 1em 1em;
+    padding: 1em 1rem;
     
 }
 
@@ -60,14 +72,18 @@ nav a {
     color: var(--primary-light-color);
     text-decoration: none;
     font-size: 1.2rem;
-    text-transform: uppercase;
     opacity : 0;
     transition: opacity 150ms ease-in-out;
+    font-weight: 600;
+}
+
+header button {
+    margin-bottom: 1.3rem;
+    margin-right: 0.8rem;
 }
 
 nav li:hover, nav li:active {
-    color: var(--secondary-dark-color, pink);
-    background-color: var(--darker-background, darkred);
+    color: var(--accent-color);
 }
 
 .nav-toggle {
@@ -103,7 +119,7 @@ nav li:hover, nav li:active {
 .bar {
     width: 30px;
     height: 3px;
-    background-color: var(--primary-light-color);
+    background-color: var(--accent-color);
     margin: 5px 0;
     transition: 0.4s;
     border-radius: 5px;
@@ -136,11 +152,14 @@ nav li:hover, nav li:active {
         all: unset;
         height: 100%;
         grid-column: 4 / 4;
+        box-shadow: none;
     }
 
     nav a {
         opacity: 1;
         height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     nav ul {
@@ -151,8 +170,13 @@ nav li:hover, nav li:active {
     }
 
     nav li {
-        padding: 2rem 1.5rem;
+        padding: 2rem 0.8rem;
         height: 100%;
         font-size: 0.8em;
+    }
+
+    header button {
+        margin : 0;
+        margin-left: 1em;
     }
 }

@@ -23,11 +23,12 @@ function loadComponent(url, elementId) {
 }
 
 function attachHeaderEvents() {
-    const button = document.getElementById('boutonAAnimer');
-    if (button) {
-        button.addEventListener('click', function() {
-            // Code d'animation pour le bouton
-            console.log('Button clicked!');
-        });
-    }
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 }
