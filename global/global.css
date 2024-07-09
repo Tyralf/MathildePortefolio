@@ -6,12 +6,18 @@
     --background-color : #FDFDFD; 
     --text-color : #000000;
 
+    --warning-color: #C91D2B;
+
     --shadow-color: rgba(43, 43, 43, 0.336);
 
     --title-font: "Playfair Display", serif;
     --text-font: 'Lato', light;
 
     --header-height : 82px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -62,6 +68,10 @@ a {
     text-decoration: none;
 }
 
+strong {
+    color: var(--accent-color);
+}
+
 a:hover {
     color: var(--secondary-color);
 }
@@ -94,10 +104,21 @@ button:active {
     padding-bottom: 1em;
     box-shadow: 0.1em 0.1em 1em 0.1em var(--shadow-color);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.warning-card {
+    border-left: 15px solid var(--warning-color);
+}
+
+
 
 .card-title {
     margin-top: 0;
+    margin-bottom: 1rem;
     color: var(--accent-color);
     font-family: var(--text-font);
 }
@@ -110,3 +131,31 @@ button:active {
     margin: 1em;
 }
 
+.section-title-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.icon {
+    max-width: 30px;
+    max-height: 30px;
+    width: 4em;
+    margin-right: 1em;
+}
+
+.warning-text {
+    color: var(--warning-color);
+}
+
+@media (min-width: 1000px)
+{
+    section {
+        min-height: 100vh;
+    }
+
+    .section-title-box {
+        max-width: 900px;
+        width: 70%;
+    }
+}

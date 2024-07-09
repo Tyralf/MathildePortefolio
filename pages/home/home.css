@@ -30,6 +30,12 @@
     height: 100%;
 }
 
+.button-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 .hero-content {
     max-width: 80%;
     display: flex;
@@ -43,15 +49,31 @@
     display: none;
 }
 
+.hero-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    justify-content: right;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.more-link-hover-effect {
+    display: none;
+}
+
+.more-link:hover > .more-link-hover-effect {
+    display: inline-block;
+}
+
+
 
 @media (min-width: 1000px)
 {
-    .hero-section, .practices-section {
-        height: 100vh;
-    }
+
     
     .hero-content {
-        max-width: clamp(30%,70%,900px);
+        max-width: clamp(30%,70%,1100px);
     }
     
     .hero-section img {

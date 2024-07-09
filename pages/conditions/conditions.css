@@ -1,0 +1,53 @@
+.condition-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.condition {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.condition-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.condition-title h3{
+    margin: 0;
+}
+
+.condition p {
+    padding-left: 0.5rem;
+}
+
+.condition-card {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    text-align: left;
+    align-items: flex-start;
+    box-shadow: 0.1rem 0.2rem 0.5em 0.1em rgba(190, 190, 190, 0.24);
+}
+
+.condition-card p{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1000px){
+    .condition-content {
+        max-width: 900px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}

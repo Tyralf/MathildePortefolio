@@ -13,11 +13,13 @@
    <link rel="stylesheet" href="../../components/header/header.css">
    <link rel="stylesheet" href="../../components/footer/footer.css">
    <link rel="stylesheet" type="text/css" href="home.css">
+   <link rel="stylesheet" href="../conditions/conditions.css">
+   <link rel="stylesheet" href="../contact/contact.css">
 </head>
 <body>
    <header id = "header" class="header"></header>
    <!--------- Acceuil ----------> 
-   <section class="hero-section">
+   <section id="hero" class="hero-section">
       <div class="hero-content">
          <img src="../../assets/Hero-image.png" alt="Mathilde lemarié psychologue">
          <div class="hero-text">
@@ -26,11 +28,11 @@
             <p>
                J’accompagne en consultations individuelles, des enfants dès l’âge de 6 ans, des adolescents et des jeunes adultes, pour les aider à mieux se comprendre, à se développer pleinement et à s'épanouir.
                <br><br>
-               Je suis une psychologue qui parle ! Mes consultations sont des moments d'échange et de partage, toujours dans un esprit de bienveillance.
+               <strong>Je suis une psychologue qui parle !</strong> Mes consultations sont des moments d'échange et de partage, toujours dans un esprit de bienveillance.
             </p>
             <div class="hero-links">
-               <a href="">En savoir plus</a>
-               <a href=""><button>Prendre RDV</button></a>
+               <a class="more-link" href="../about/about.html">En savoir plus <span class="more-link-hover-effect"> ></span></a>
+               <a href="../home/home.html#contact"><button>Prendre RDV</button></a>
             </div>            
          </div>
       </div>
@@ -41,29 +43,41 @@
          <h2 class="title section-title">Mes pratiques</h2>
          <div class="practices-cards">
             <div class="card practice-card">
-               <img class="card-image" src="../../assets/Image 1 Pratiques.png" alt="">
-               <h3 class="card-title">Bilan</h3>
-               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quo sint facilis enim cum distinctio totam molestiae voluptatum aspernatur quibusdam suscipit fugit assumenda maxime iure autem, minima ex vitae soluta.</p>
-               <a href=""><button>En savoir plus</button></a>
+               <div>
+                  <img class="card-image" src="../../assets/Image 1 Pratiques.png" alt="">
+                  <h3 class="card-title">Bilan</h3>
+                  <p class="card-text">Je réalise des bilans psychologiques complets pour les enfants, adolescents et jeunes adultes. Ceux-ci peuvent être nécessaires dans le cadre d'une démarche personnelle, d'un diagnostique ou d'un dossier auprès de la MDPH, afin d'assurer un suivi adéquat.</p>
+               </div>
+               <div class="button-container">
+                  <a class="button-link"><button>En savoir plus</button></a>
+               </div>
             </div>
             <div class="card practice-card">
-               <img class="card-image" src="../../assets/Image 2 pratiques.png" alt="">
-               <h3 class="card-title">Suivi</h3>
-               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga impedit veritatis molestias quasi error debitis ab deleniti tempora natus pariatur similique culpa quae ducimus corrupti libero, voluptatum obcaecati dignissimos?</p>
-               <a href=""><button>En savoir plus</button></a>
+               <div>
+                  <img class="card-image" src="../../assets/Image 2 pratiques.png" alt="">
+                  <h3 class="card-title">Suivi</h3>
+                  <p class="card-text">J’accompagne des enfants dès l’âge de 6 ans, des adolescents et des jeunes adultes, en utilisant des outils ludiques et créatifs, adaptés à l’âge et aux besoins de chaque patient. Mon approche est personnalisée pour chaque individu afin de garantir un soutien optimal.</p>
+               </div>
+               <div class="button-container">
+                  <a class="button-link"><button>En savoir plus</button></a>
+               </div>
             </div>
             <div class="card practice-card">
-               <img class="card-image" src="../../assets/Image 3 Pratiques.png" alt="">
-               <h3 class="card-title">Intervention relationelle</h3>
-               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae minima alias. Voluptatibus dolor animi excepturi praesentium itaque nesciunt ullam odio illo atque, illum nam rem alias id necessitatibus deleniti!</p>
-               <a href=""><button>En savoir plus</button></a>
+               <div>
+                  <img class="card-image" src="../../assets/Image 3 Pratiques.png" alt="">
+                  <h3 class="card-title">Intervention relationelle</h3>
+                  <p class="card-text">L’objectif de cette méthode est d’aider les parents à percevoir et comprendre les comportements et les signaux de leur enfant afin d’améliorer les interactions et la relation. Ce programme d’intervention s’adresse aux enfants de 0 à 5 ans et est centré sur la famille.</p>
+               </div>
+               <div class="button-container">
+                  <a class="button-link"><button>En savoir plus</button></a>
+               </div>
             </div>
          </div>
       </div>
    </section>
    <!--------- Acceuil ----------> 
-   <section id="conditions"></section>
-   <section id="contact"></section>
+   <section id="conditions" class="condition-section"></section>
+   <section id="contact" class="contact-section"></section>
    <footer id="footer"></footer>
 </body>
 </html>

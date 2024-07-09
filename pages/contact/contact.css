@@ -1,0 +1,72 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 90%;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 6px  lightgrey;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  input,
+  textarea {
+      font-family: 'Inconsolata', monospace;
+      color: rgb(116, 116, 116);
+      font-weight: 600;
+      width: 100%;
+      padding: 12px;
+      box-shadow: 1px 1px 3px inset lightgrey;
+      background-color: #f2f2f2;
+      border: 1px lightgrey;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  
+  .container>form>p>button {
+    margin: 0;
+  }
+  
+  label{
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 600;
+      letter-spacing: 1px;
+  }
+  
+  input::placeholder,textarea::placeholder{
+      color: lightgray;
+  }
+  
+  
+    input:focus, textarea:focus {
+      outline: none;
+      border: none;
+      background-color: rgb(238, 238, 238);
+    }
+  
+    textarea {
+      height: 10vh; 
+      transition: height 0.3s ease;
+    }
+    
+    textarea:focus {
+      height: 15vh;
+    }
