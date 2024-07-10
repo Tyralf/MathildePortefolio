@@ -1,0 +1,81 @@
+.info-img{
+    display: none;
+    max-width: 500px;
+    width: 100%;
+}
+
+.topic-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question {
+    font-size: 1.5rem;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 1px solid var(--accent-color);
+    transition: 0.4s;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: var(--primary-color);
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: var(--background-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: var(--accent-color);
+    font-weight: 100;
+    font-size: 2em;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+
+@media (min-width: 1000px)
+{
+    .info-img{
+        display:block;
+    }
+
+    .info-content{
+        max-width: 1400px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .info-section .section-title-box{
+        max-width: 1400px;
+        width: 90%;
+    }
+}
