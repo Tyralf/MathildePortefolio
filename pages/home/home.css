@@ -1,0 +1,99 @@
+
+.hero-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.practices-section {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.practices-cards {
+    max-width: 400px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em auto;
+}
+
+.practice-card {
+    height: 100%;
+}
+
+.button-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+}
+
+.hero-section img {
+    display: none;
+}
+
+.hero-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    justify-content: right;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.more-link-hover-effect {
+    display: none;
+}
+
+.more-link:hover > .more-link-hover-effect {
+    display: inline-block;
+}
+
+
+
+@media (min-width: 1000px)
+{
+    .hero-content {
+        max-width: clamp(30%,70%,1100px);
+    }
+    
+    .hero-section img {
+        display: block;
+        height: 70vh;
+    }
+
+    .practices-cards {
+        width: 90%;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .practices-section {
+        padding-top: 0;
+    }
+}
+
+
+
+
