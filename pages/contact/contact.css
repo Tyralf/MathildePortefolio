@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+    min-width: fit-content;
+    padding-bottom: 3rem;
+    gap: 2rem;
 }
 
 
@@ -11,7 +14,7 @@
     justify-content: center;
     align-items: center;
     max-width: 900px;
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -70,3 +73,64 @@
     textarea:focus {
       height: 15vh;
     }
+
+    .form-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 90%;
+      min-width: 300px;
+    }
+    .form-side h3 {
+      text-align: center;
+    }
+
+    .map-side{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100%;
+      padding: 1rem;
+    }
+   
+
+    .contact-text-map {
+      width: 300px;
+    }
+  
+    .map {
+      
+      width: 100%;
+      aspect-ratio: 9/10;
+    }
+
+  
+    
+
+@media (min-width:1000px)
+{
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    
+  }
+  .form-side {
+    padding: 5rem 1rem;
+    
+  }
+
+  .contact-text-map {
+    width: 100%;
+  }
+
+  .contact-title {
+    width: 100%;
+  }
+
+}

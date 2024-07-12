@@ -3,7 +3,6 @@ footer {
     color: var(--primary-light-color);
     text-align: center;
     padding: 2rem 0;
-    margin-top: 3rem;
     border-top: 2px solid var(--secondary-color) ;
 }
 

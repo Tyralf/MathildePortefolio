@@ -35,9 +35,14 @@ body {
     display: flow-root;
 }
 
+section {
+    padding-top: 2rem;
+}
+
 .hero-section{
     padding-top: var(--header-height);
 }
+
 
 .title {
     font-family: var(--title-font);
@@ -188,8 +193,10 @@ button:active {
         min-height: 100vh;
     }
 
+
     .section-title-box {
         max-width: 900px;
         width: 70%;
+        margin: 2em 0;
     }
 }

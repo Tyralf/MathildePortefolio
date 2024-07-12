@@ -58,6 +58,10 @@
     content: "\2212";
 }
 
+.info-content{
+    margin-bottom: 2em;
+}
+
 @media (min-width: 1000px)
 {
     .info-img{

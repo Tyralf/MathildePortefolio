@@ -70,8 +70,6 @@
 
 @media (min-width: 1000px)
 {
-
-    
     .hero-content {
         max-width: clamp(30%,70%,1100px);
     }
@@ -89,6 +87,10 @@
         gap: 2em;
         justify-content: center;
         align-items: center;
+    }
+
+    .practices-section {
+        padding-top: 0;
     }
 }
 
