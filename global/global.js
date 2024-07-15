@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent('../../components/header/header.html', 'header').then(() => {
+    loadComponent('/components/header/header.html', 'header').then(() => {
         attachHeaderEvents();
     });
-    loadComponent('../../components/footer/footer.html', 'footer');
+    loadComponent('/components/footer/footer.html', 'footer');
     // Event listeners pour les liens de navigation
     /*document.getElementById('header').addEventListener('click', function(e) {
         if (e.target.tagName === 'A') {
