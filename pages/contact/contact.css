@@ -29,7 +29,6 @@
   
   input,
   textarea {
-      font-family: 'Inconsolata', monospace;
       color: rgb(116, 116, 116);
       font-weight: 600;
       width: 100%;
@@ -42,6 +41,7 @@
       margin-top: 6px;
       margin-bottom: 16px;
       resize: vertical;
+      font-family: var(--text-font);
   }
   
   .container>form>p>button {
@@ -92,9 +92,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 80%;
+      width: 900%;
       height: 100%;
-      padding: 1rem;
     }
    
 
@@ -131,6 +130,10 @@
 
   .contact-title {
     width: 100%;
+  }
+
+  .map-side{
+    width: 80%;
   }
 
 }

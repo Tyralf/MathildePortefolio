@@ -1,0 +1,11 @@
+.legal-section {
+    margin : 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.legal-content {
+    max-width: 800px;
+}
