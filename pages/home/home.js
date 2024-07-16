@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent('../conditions/conditions.html', 'conditions');
-    loadComponent('../contact/contact.html', 'contact');
+    loadComponent('/pages/conditions/conditions.html', 'conditions');
+    loadComponent('/pages/contact/contact.html', 'contact');
 });
 
 function loadComponent(url, elementId) {
