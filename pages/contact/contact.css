@@ -92,9 +92,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 80%;
+      width: 90%;
       height: 100%;
-      padding: 1rem;
     }
    
 
@@ -131,6 +130,10 @@
 
   .contact-title {
     width: 100%;
+  }
+
+  .map-side{
+    width: 80%;
   }
 
 }
