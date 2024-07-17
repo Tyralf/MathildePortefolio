@@ -26,18 +26,21 @@
     <h3>Formulaire de prise de rendez-vous</h3>
     <div class="contact-content">
         <div class="container">
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" action="../../pages/form/sucess.html" data-netlify="true">
                 <p>
-                <label>Votre nom<input type="text" name="name" placeholder="Ecrivez votre nom..." /></label>
+                    <label>Votre prénom<input type="text" name="first-name" placeholder="Ecrivez votre prénom..." /></label>
                 </p>
                 <p>
-                <label>Votre email<input type="email" name="email" placeholder="Ecrivez votre email..." /></label>
+                    <label>Votre nom<input type="text" name="name" placeholder="Ecrivez votre nom..." /></label>
                 </p>
                 <p>
-                <label>Votre message<textarea name="message" placeholder="Ecrivez votre message..."></textarea></label>
+                    <label>Votre email<input type="email" name="email" placeholder="Ecrivez votre email..." /></label>
                 </p>
                 <p>
-                <button type="submit">Envoyer</button>
+                    <label>Votre message<textarea name="message" placeholder="Ecrivez votre message..."></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Envoyer</button>
                 </p>
             </form>
         </div>
